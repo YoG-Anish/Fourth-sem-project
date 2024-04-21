@@ -13,8 +13,8 @@ if st.session_state.user_id is None or st.session_state.user_role != 1:
 else:
     with st.form('addproduct',clear_on_submit=False):
         st.write("<h2>Add Product</h2>", unsafe_allow_html=True)
-        product_name = st.text_input(' ', placeholder='Product Name', max_chars=20 )
-        product_price = st.text_input(' ', placeholder='Price', max_chars=80)
+        product_name = st.text_input(' ', placeholder='Product Name', max_chars=40 )
+        product_price = st.text_input(' ', placeholder='Price', max_chars=10)
 
         uploaded_file = st.file_uploader("Upload Product Image", type=['png', 'jpg', 'jpeg'])
         if uploaded_file is not None:

@@ -5,17 +5,15 @@ import streamlit as st
 
 def stylus():
     st.markdown(f"""
-    <style>
-        .block-container{{
-            width: 1440px;
-            max-width: 100%;
-        }}
-        #tabs-bui2-tabpanel-2{{
-            max-width: 50%; 
-        }}
-    </style>""",
-    unsafe_allow_html=True,
-)
+        <style>
+            .block-container{{
+                width: 1440px;
+                max-width: 100%;
+            }}
+            
+        </style>""",
+        unsafe_allow_html=True,
+    )
 def captilize():
     st.markdown("""
     <style>

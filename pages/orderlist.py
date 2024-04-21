@@ -4,6 +4,7 @@ import pandas as pd
 
 session_declare()
 captilize()
+
 if st.session_state.user_id is None or st.session_state.user_role != 1:
     st.write("Sorry you don't have the authority to open this page. ")
     auth = st.button('Authorize')
